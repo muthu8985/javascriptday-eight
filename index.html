@@ -113,6 +113,24 @@ const points = [40, 100, 1, 5, 25, 10];
       document.getElementById("demo8").innerHTML = myChildrens;
     </script>
     <p id="demo9">copty within</p>
+    <p class="demo10">The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+
+    </p>
+    <script>
+        const myArr = [[1,2],[3,4],[5,6]];
+        const newArr = myArr.flat();
+        document .write(newArr)
+    </script>
+    <p>The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+
+
+
+    </p>
+    <script>
+        const myArra = [1, 2, 3, 4, 5,6];
+        const newArra = myArra.flatMap(x => [x, x * 10]);
+        document.write(newArra)
+    </script>
     <script src="index.js"></script>
   </body>
 </html>

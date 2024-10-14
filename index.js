@@ -47,3 +47,8 @@ const myObj = {
     { name: "Fiat", models: ["500", "Panda"] },
   ],
 };
+let num=["one","two","three","four","five"]
+numcopy=num.copyWithin(2,1)
+document.write(numcopy);
+numcopy1=num.copyWithin(2,0,3)
+document.write(numcopy1)
