@@ -9,7 +9,7 @@
     <script>
       // creating arrays
       const students = ["muthu", "kumar", "ashwin", "praveen"];
-      document.write(students)
+      document.write(students);
     </script>
     <script>
       //  creating arrays by location
@@ -19,30 +19,100 @@
       cars[2] = "hyundai";
       cars[3] = "kia";
       console.log(cars);
-    //   const cars = new Array("Saab", "Volvo", "BMW");
-    // by using new array we can create a array
+      //   const cars = new Array("Saab", "Volvo", "BMW");
+      // by using new array we can create a array
     </script>
-<script>
-// changing the array Element
-     const name=["muthu"," kumar ","arjun","nakul"]
-     name [0]="praveen";
-     console.log(name)
-</script>
-<script>
-    // changing the array to string
-     const fruits=["apple","orange","mango","banana","strawberry"]
-     document.write(fruits.toString())
-    //  length for an array
-     document.write(fruits.length)
-    //  accessing the last array element
-    
-    document.write(fruits.length-1)
-    
-</script>
-<!-- looping an array -->
- <p id="demo">
+    <script>
+      // changing the array Element
+      const name = ["muthu", " kumar ", "arjun", "nakul"];
+      name[0] = "praveen";
+      console.log(name);
+    </script>
+    <script>
+      // changing the array to string
+      const fruits = ["apple", "orange", "mango", "banana", "strawberry"];
+      document.write(fruits.toString());
+      //  length for an array
+      document.write(fruits.length);
+      //  accessing the last array element
 
- </p>
+      document.write(fruits.length - 1);
+    </script>
+    <!-- looping an array -->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p>
+      If you use a named index when accessing an array, JavaScript will redefine
+      the array to a standard object, and some array methods and properties will
+      produce undefined or incorrect results.
+    </p>
+
+    <p id="demo2"></p>
+
+    <script>
+      const person = [];
+      person["firstName"] = "John";
+      person["lastName"] = "Doe";
+      person["age"] = 46;
+      document.getElementById("demo2").innerHTML =
+        person[0] + " " + person.length;
+    </script>
+    <!-- JavaScript has a built-in array constructor new Array().
+
+But you can safely use [] instead. -->
+    <!-- const points = new Array(40, 100, 1, 5, 25, 10);
+const points = [40, 100, 1, 5, 25, 10];
+ -->
+    <!-- by using new array element we can create the array -->
+
+    <!-- array join -->
+    <p id="demo3">Array Join</p>
+    <script>
+      const frujoin = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo3").innerHTML = fruits.join(" * ");
+    </script>
+    <p id=" demo4">The pop() method removes the last element from an array:</p>
+    <script>
+      let words = ["like", "let", "them"];
+      words.pop();
+      document.write(words);
+    </script>
+    <p id="demo5">
+      Shifting is equivalent to popping, but working on the first element
+      instead of the last.
+    </p>
+    <script>
+      let shift = ["Banana", "Orange", "Apple", "Mango"];
+      shift.shift();
+      document.write(shift);
+    </script>
+    <p id="demo6">
+      The unshift() method adds a new element to an array (at the beginning),
+      and "unshifts" older elements:
+    </p>
+    <script>
+      const unshifts = ["Banana", "Orange", "Apple", "Mango"];
+      unshifts.unshift("Lemons");
+      document.write(unshifts);
+    </script>
+    <p id="demo7">JavaScript Array concat()</p>
+    <script>
+      const myGirls = ["Cecilie", "Lone"];
+      const myBoys = ["Emil", "Tobias", "Linus"];
+
+      const myChildren = myGirls.concat(myBoys);
+      document.write(myChildren);
+    </script>
+    <p>The concat() method can merge string values to arrays:</p>
+
+    <p id="demo8"></p>
+
+    <script>
+      const myArray = ["Emil", "Tobias", "Linus"];
+      const myChildrens = myArray.concat("Peter");
+      document.getElementById("demo8").innerHTML = myChildrens;
+    </script>
+    <p id="demo9">copty within</p>
     <script src="index.js"></script>
   </body>
 </html>
